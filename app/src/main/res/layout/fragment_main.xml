@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_main">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/main_football_club_img_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/ic_main_football_club"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/main_pm_img" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/main_favorite_player_img_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/ic_main_favorite_players"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/main_football_club_img_btn" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/main_favorite_club_img_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/ic_main_favorite_club"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/main_favorite_player_img_btn" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/main_pm_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/language_selection_pm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/main_football_club_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/parimatch_medium"
+            android:text="@string/football_club"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/main_football_club_img_btn"
+            app:layout_constraintStart_toStartOf="@+id/guideline_bg"
+            app:layout_constraintTop_toTopOf="@+id/main_football_club_img_btn" />
+
+        <TextView
+            android:id="@+id/main_favorite_player_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/parimatch_medium"
+            android:text="@string/favorite_player"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/main_favorite_player_img_btn"
+            app:layout_constraintStart_toStartOf="@+id/guideline_bg"
+            app:layout_constraintTop_toTopOf="@+id/main_favorite_player_img_btn" />
+
+        <TextView
+            android:id="@+id/main_favorite_club_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/parimatch_medium"
+            android:text="@string/favorite_club"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/main_favorite_club_img_btn"
+            app:layout_constraintStart_toStartOf="@+id/guideline_bg"
+            app:layout_constraintTop_toTopOf="@+id/main_favorite_club_img_btn" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.4" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

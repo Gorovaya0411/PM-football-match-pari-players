@@ -3,13 +3,16 @@
     package="com.footballmatch.sportselect">
 
     <application
+        android:name=".App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Football">
-        <activity android:name=".MainActivity">
+        android:theme="@style/Theme.PMFootballMatchPariPlayers">
+        <activity
+            android:name=".ui.activity.main.MainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -18,4 +21,8 @@
         </activity>
     </application>
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
 </manifest>

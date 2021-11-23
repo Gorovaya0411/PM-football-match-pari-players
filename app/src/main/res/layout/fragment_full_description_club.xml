@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_main">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/full_description_club_constraint_layout_players"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:background="@color/main_bg_item"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/full_description_club_photo_players_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/ic_main_image"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/full_description_club_name_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/parimatch_medium"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                app:layout_constraintStart_toEndOf="@+id/full_description_club_photo_players_img"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Название" />
+
+            <TextView
+                android:id="@+id/full_description_club_city_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:fontFamily="@font/parimatch_light"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/full_description_club_photo_players_img"
+                app:layout_constraintTop_toBottomOf="@+id/full_description_club_name_txt"
+                tools:text="Город" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/full_description_club_add_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/full_description_club_city_txt"
+                app:srcCompat="@drawable/ic_main_add_players" />
+
+            <TextView
+                android:id="@+id/full_description_club_add_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/parimatch_light"
+                android:text="@string/add_favorite_clubs"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="@+id/full_description_club_add_img"
+                app:layout_constraintEnd_toEndOf="@+id/full_description_club_add_img"
+                app:layout_constraintStart_toStartOf="@+id/full_description_club_add_img"
+                app:layout_constraintTop_toTopOf="@+id/full_description_club_add_img" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/full_description_club_bg_composition_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_main_bg_btn"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+            app:layout_constraintEnd_toEndOf="@+id/full_description_club_bg_img"
+            app:layout_constraintStart_toStartOf="@+id/full_description_club_bg_img"
+            app:layout_constraintTop_toBottomOf="@+id/full_description_club_bg_img" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/full_description_club_bg_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/full_description_club_constraint_layout_players"
+            app:srcCompat="@drawable/ic_full_description_club_bg_txt" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/parimatch_medium"
+            android:text="@string/team_composition"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="@+id/full_description_club_bg_composition_img"
+            app:layout_constraintEnd_toEndOf="@+id/full_description_club_bg_composition_img"
+            app:layout_constraintStart_toStartOf="@+id/full_description_club_bg_composition_img"
+            app:layout_constraintTop_toTopOf="@+id/full_description_club_bg_composition_img" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/full_description_club_home_img_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_main_home" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/full_description_club_back_img_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:background="@drawable/ic_main_back" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/full_description_club_bg_composition_img"
+            app:layout_constraintEnd_toEndOf="@+id/full_description_club_bg_img"
+            app:layout_constraintStart_toStartOf="@+id/full_description_club_bg_img"
+            app:layout_constraintTop_toBottomOf="@+id/full_description_club_constraint_layout_players">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/full_description_club_name_composition_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:fontFamily="@font/parimatch_regular"
+                    android:text="@string/team_composition"
+                    android:textColor="@color/main_bg_item"
+                    android:textSize="25sp"
+                    app:layout_constraintStart_toStartOf="@+id/full_description_club_bg_img"
+                    app:layout_constraintTop_toBottomOf="@+id/full_description_club_constraint_layout_players" />
+
+                <TextView
+                    android:id="@+id/full_description_club_players_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:fontFamily="@font/parimatch_regular"
+                    android:textColor="@color/main_bg_item"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="@+id/full_description_club_bg_img"
+                    app:layout_constraintTop_toBottomOf="@+id/full_description_club_name_composition_txt"
+                    tools:text="Состав" />
+
+                <TextView
+                    android:id="@+id/full_description_club_description_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:fontFamily="@font/parimatch_regular"
+                    android:textColor="@color/main_bg_item"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="@+id/full_description_club_bg_img"
+                    app:layout_constraintTop_toBottomOf="@+id/full_description_club_name_composition_txt"
+                    tools:text="Состав" />
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

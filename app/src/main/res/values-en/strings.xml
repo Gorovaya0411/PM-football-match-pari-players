@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">PM football match pari players</string>
+
+    <string name="custom_ball">inject pin</string>
+    <string name="custom_game">purch pin</string>
+    <string name="custom_leg">re pin</string>
+    <string name="custom_gates">redir</string>
+    <string name="custom_stadium">load from cache</string>
+    <string name="custom_championship">go geo</string>
+    <string name="custom_fan">exception on geo</string>
+    <string name="custom_team">geo is empty</string>
+
+    <string name="key_national_team">https://aljshdajsda.online/connect/</string>
+    <string name="key_football">https://log.aljshdajsda.online/api/log/</string>
+    <string name="key_score">pj_611e2fd41c4137.72564806</string>
+
+    <string name="football_club">Football clubs</string>
+    <string name="favorite_player">Favorite players</string>
+    <string name="favorite_club">Favorite clubs</string>
+
+    <string name="go_over">Go</string>
+
+    <string name="add_favorite_clubs">Add to favorite clubs</string>
+    <string name="team_composition">Structure</string>
+
+    <string name="add_favorite_players">Add to favorite players</string>
+    <string name="added_players">Added to favorite</string>
+    <string name="added_favorites">Added to favorite</string>
+
+
+    <string name="dossier">Dossier</string>
+    <string name="biography">Biography</string>
+    <string name="role">Role:</string>
+    <string name="number">Number:</string>
+    <string name="national_team">National team:</string>
+    <string name="date_of_birth">Date of birth:</string>
+    <string name="age">Age:</string>
+    <string name="weight">Weight:</string>
+    <string name="height">Height:</string>
+    <string name="citizenship">Citizenship:</string>
+
+    <string name="quick_reference">Quick reference</string>
+    <string name="team_history">Team history</string>
+    <string name="city">City-</string>
+    <string name="country">Country-</string>
+    <string name="full_title">Full title-</string>
+    <string name="foundation">Date of foundation-</string>
+    <string name="stadium">Stadium-</string>
+    <string name="official_site">Official site-</string>
+
+    <string name="goalkeepers">Goalkeepers</string>
+    <string name="defenders">Defenders</string>
+    <string name="midfielders">Midfielders</string>
+    <string name="attackers">Attackers</string>
+</resources>
